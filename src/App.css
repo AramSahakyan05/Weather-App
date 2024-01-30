@@ -1,0 +1,13 @@
+.App {
+     background-image: linear-gradient(to bottom, #aff2f5, #3eecf5);
+     /* background-image: url("./assets/images/snowy.gif");  */
+     background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+.App > .weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

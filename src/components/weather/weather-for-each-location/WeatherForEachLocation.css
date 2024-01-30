@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@300&display=swap');
+.weather-for-each-location {
+    width: 50%;
+    margin: auto;
+}
+h5 > svg {
+    margin: 0 7px;
+}
+span {
+    color: #868686;
+}
+form {
+    position: relative;
+}
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0 10px 50px;
+    border-radius: 20px;
+}
+form > svg {
+    position: absolute;
+    left: 5px;
+    font-size: 29px;
+    top: 5px;
+    color: rgb(0, 110, 110);
+}
+.weather-for-each-location > section {
+    margin-top: 15px;
+    padding: 24px;
+    background-color: #fff;
+    border: 3px solid #044;
+    border-radius: 10px;
+    min-height: 300px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+section > h4 {
+    color: #868686;
+}
+section > .weather-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 120px 0 40px;
+}
+.weather-info > .location-temperature > h4 {
+    color: rgb(0, 110, 110);
+}
+.location-temperature > div, h4 {
+    margin: 15px 0;
+}
+.temperature {
+    display: flex;
+    align-items: center;
+}
+.temperature > h1 {
+    font-size: 50px;
+}
+.temperature > img {
+    width: 100px;
+    height: 100px;
+}
+.wind-humidity {
+    margin-top: 20px;
+}
+.wind-humidity >div, h4{
+    margin: 15px 0;
+}
+.wind-humidity > .min-max-temp {
+    display: flex;
+    justify-content: space-between;
+}
+.margin > svg{
+    margin-top: 5px;
+}
+.hum-wind-press > h5{
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+}
