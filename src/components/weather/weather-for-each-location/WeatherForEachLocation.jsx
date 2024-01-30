@@ -45,17 +45,17 @@ const WeatherForEachLocation = () => {
                   <h4>{"Feels like " + data && data.main && data.main.feels_like + "°"}</h4>
                   <div className="min-max-temp">
                     <h5 className='margin'>
-                    <ImArrowUp />
+                    {data && <ImArrowUp />}
                       {data && data.main && Math.ceil(data.main.temp_max)}
                     </h5>
                     <h5 className='margin'>
-                    <ImArrowDown />
+                    {data && <ImArrowDown />}
                       {data && data.main && Math.floor(data.main.temp_min)}
                     </h5>
                   </div>
                   <div className="hum-wind-press">
                     <h5>
-                      <MdWaterDrop />
+                      {data && <MdWaterDrop />}
                       {"Humidity" + data && data.main && data.main.humidity}
                     </h5>
                     <h5>
@@ -63,7 +63,7 @@ const WeatherForEachLocation = () => {
                       {"Wind" + data && data.wind && data.wind.speed}
                     </h5>
                     <h5>
-                      <MdWaterDrop />
+                      {data && <MdWaterDrop />}
                       {"Pressure" + data && data.main && data.main.pressure + "hPa"}
                     </h5>
                   </div>

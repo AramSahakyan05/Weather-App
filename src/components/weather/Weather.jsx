@@ -12,6 +12,7 @@ const Weather = () => {
     const getWeatherData = async () => {
         try {
             const {data} = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=e34bf48faf93288d455e57db11fb58bb`);
+            console.log(data);
             setData(data);
         } catch ({error}) {
             {!data && <ErrorPage />}
